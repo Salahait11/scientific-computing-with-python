@@ -45,7 +45,7 @@ def decrypt_vigenere(message, key):
 
 
 # --- Test des deux algorithmes ---
-if __name__ == "__main__":
+def main():
     # Chiffrement de César
     text1 = "Hello Zaira"
     shift = 3
@@ -63,3 +63,6 @@ if __name__ == "__main__":
     print("Clé :", key)
     decrypted_text = decrypt_vigenere(encrypted_text, key)
     print("Texte déchiffré :", decrypted_text)
+
+if __name__ == "__main__":
+    main()
